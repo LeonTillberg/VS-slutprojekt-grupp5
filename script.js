@@ -34,8 +34,8 @@ writeUserData()
 
 onValue(ref(db, 'Leon'), (snapshot) => {
     const data = snapshot.val();
-    alert(data.message)
-    document.body.innerHTML = data.message;
+    // alert(data.message) //pop-up
+    // document.body.innerHTML = data.message; //ändrar html
 }, { onlyOnce: true }
 );
 
@@ -44,12 +44,14 @@ onValue(ref(db, '/'), (snapshot) => {
     snapshot.forEach((childSnapshot) => {
         const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
+
+
         console.log(childKey, childData);
     })
-}, { onlyOnce: true }
-);
+// }, { onlyOnce: true } //om det bara ska göras vid refresh
+});
 
 
-remove(ref(db, 'Leon') ).then( () => {
-    console.log("Leon");
-})
+// remove(ref(db, 'Leon') ).then( () => {  //tar bort
+//     console.log("Leon");
+// })
