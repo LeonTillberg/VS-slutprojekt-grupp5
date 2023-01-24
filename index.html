@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,40 @@
     <script src="script.js1" defer></script>
     <title>Grupp5</title>
 </head>
+
 <body>
     <script src="script.js" type="module"></script>
-    
-    <nav></nav>
 
-    <form>
-        <input type="text">
+    <nav>
+        <div class="container-navbar">
+            <img id="logo" src="" alt="Logo">
+            <h5 class="Twitter2.0">Twitter2.0</h5>
+        </div>
+    </nav>
+
+    <p id="welcome-text">Välkommen till vår hemsida, du är välkommen att posta ett meddelande!</p>
+
+    <form id="user-form">
+        <input type="text" id="user-message">
         <button onclick="submitConfirm()" id="submit-btn">Submit</button>
     </form>
+    
+    <p>Du kan se vad du postat här under:</p>
 
     <div id="message-container">
 
     </div>
 
-    <footer></footer>
-
+    <footer id="footer-homepage">
+        <div class="socials">
+            <h4 id="footer-title">Platforms:</h4>
+            <a id="github" href="https://github.com/" target="_blank"><img src="" alt=""></a>
+            <a id="instagram" href="https://www.instagram.com/" target="_blank"><img src="" alt=""></a>
+            <a id="twitter" href="https://twitter.com" target="_blank"><img src="" alt=""></a>
+        </div>
+        <div id="copyright">
+            <h6>Copyright© 2023 </h6>
+        </div>
+    </footer>
 </body>
 </html>

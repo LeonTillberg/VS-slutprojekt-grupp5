@@ -26,7 +26,7 @@ console.log(db);
 
 function writeUserData() {
     set(ref(db, 'Leon'), {
-        message: "Hello"
+        message: "World"
     });
 }
 writeUserData()
